@@ -1,0 +1,9 @@
+require("babel-register");
+const path = require('path');
+
+module.exports = {
+    'config': path.join(__dirname, 'src', 'providers', 'persistence', 'postgres', 'orm', 'config.js'),
+    'migrations-path': path.join(__dirname, 'src', 'providers', 'persistence', 'postgres', 'orm', 'migrations'),
+    'models-path': path.join(__dirname, 'src', 'providers', 'persistence', 'postgres', 'orm', 'models'),
+    'seeders-path': path.join(__dirname, 'src', 'providers', 'persistence', 'postgres', 'orm', 'seeders'),
+  }
